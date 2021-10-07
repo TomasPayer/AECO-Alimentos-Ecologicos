@@ -160,181 +160,165 @@ body {
   margin-top: 20px;
 }
 
-.card-big-shadow {
-  max-width: 320px;
-  position: relative;
+/*PAGE PRODUCTOS */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.coloured-cards .card {
-  margin-top: 30px;
+.hero-image_productos {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gallinas.jpeg");
+height: 60%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
-
-.card[data-radius="none"] {
-  border-radius: 0px;
-}
-
-.card {
-  border-radius: 8px;
-  -webkit-box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
-  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
-  background-color: #FFFFFF;
-  color: #252422;
-  margin-bottom: 20px;
-  position: relative;
-  z-index: 1;
-}
-
-.card[data-background="image"] .title,
-.card[data-background="image"] .stats,
-.card[data-background="image"] .category,
-.card[data-background="image"] .description,
-.card[data-background="image"] .content,
-.card[data-background="image"] .card-footer,
-.card[data-background="image"] small,
-.card[data-background="image"] .content a,
-.card[data-background="color"] .title,
-.card[data-background="color"] .stats,
-.card[data-background="color"] .category,
-.card[data-background="color"] .description,
-.card[data-background="color"] .content,
-.card[data-background="color"] .card-footer,
-.card[data-background="color"] small,
-.card[data-background="color"] .content a {
-  color: #FFFFFF;
-}
-
-.card.card-just-text .content {
-  padding: 50px 65px;
+.hero-text_productos {
   text-align: center;
-}
-
-.card .content {
-  padding: 20px 20px 10px 20px;
-}
-
-.card[data-color="blue"] .category {
-  color: #7a9e9f;
-}
-
-.card .category,
-.card .label {
-  font-size: 14px;
-  margin-bottom: 0px;
-}
-
-.card-big-shadow:before {
-  background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  bottom: -12%;
-  content: "";
-  display: block;
-  left: -12%;
   position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
+  top: 50%;
+  left: 43%;
+  color: white;
 }
-
-h4,
-.h4 {
-  font-size: 1.5em;
-  font-weight: 600;
-  line-height: 1.2em;
+/* Flip card pollo entero */
+.cards {
+  display: grid;
 }
-
-h6,
-.h6 {
-  font-size: 0.9em;
-  font-weight: 600;
-  text-transform: uppercase;
+.card {
+  perspective: 40rem;
 }
-
-.card .description {
-  font-size: 16px;
-  color: #66615b;
+.card-body {
+  transform-style: preserve-3d;
+  transition-duration: 1s;
+  .card:hover & {
+    transform: rotateX(-180deg);
+  }  
 }
-
-.content-card {
-  margin-top: 30px;
+.card-front, .card-back {
+  backface-visibility: hidden;
 }
-
-a:hover,
-a:focus {
+.card-back {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform: rotateX(-180deg);
+  justify-content: center;
+}
+.pollo {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+}
+.pechuga {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+}
+body {
+  line-height: 1.3;
+  font-family: sans-serif;
+}
+.cards {
+  grid-gap: 3rem;
+  padding: 1rem;
+  background: whitesmoke;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+.card {
+  display: flex;
+  transition: transform calc(var(--time) / 4);
   text-decoration: none;
+  color: inherit;
+  
+  &:active {
+    transform: scale(0.975);
+  }
+}
+.card-body {
+  border-radius: 300px;
+  flex: 1;
+}
+.card-front, .card-back {
+  @extend .shadow;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 3rem;
+  border-radius: 0.25rem;
+}
+.card-front {
+  font-size: 60px;
+}
+.shadow {
+  box-shadow: 0 -1px 1px rgba(0,0,0,0.04), 
+              0 2px 2px rgba(0,0,0,0.04), 
+              0 4px 4px rgba(0,0,0,0.04), 
+              0 8px 8px rgba(0,0,0,0.04),
+              0 16px 16px rgba(0,0,0,0.04); 
+}
+.footer__prodductos {
+  width: 100vw;
+  display: block;
+  overflow: hidden;
+  padding: 80px 0;
+  box-sizing: border-box;
+  background-color: #202f41;
 }
 
-/*======== COLORS ===========*/
-.card[data-color="blue"] {
-  background: #b8d8d8;
+.inner_footer__prodductos {
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  height: 100%;
 }
 
-.card[data-color="blue"] .description {
-  color: #506568;
+.inner_footer__prodductos .logo_container__prodductos {
+  width: 35%;
+  float: left;
+  height: 100%;
+  display: block;
 }
 
-.card[data-color="green"] {
-  background: #d5e5a3;
+.inner_footer__prodductos .logo_container__prodductos img {
+  width: 150px;
+  height: auto;
 }
 
-.card[data-color="green"] .description {
-  color: #60773d;
+.inner_footer__prodductos .footer_third__prodductos {
+  width: calc(21.6666666667% - 20px);
+  margin-right: 10px;
+  float: left;
+  height: 100%;
 }
 
-.card[data-color="green"] .category {
-  color: #92ac56;
+.inner_footer__prodductos .footer_third:last-child {
+  margin-right: 0;
+
 }
 
-.card[data-color="yellow"] {
-  background: #ffe28c;
+.inner_footer__prodductos .footer_third__prodductos h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  color: #98AC33;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.card[data-color="yellow"] .description {
-  color: #b25825;
+.inner_footer__prodductos .footer_third__prodductos a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #98AC33;
+  display: block;
+  font-weight: 200;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
 }
 
-.card[data-color="yellow"] .category {
-  color: #d88715;
-}
 
-.card[data-color="brown"] {
-  background: #d6c1ab;
-}
 
-.card[data-color="brown"] .description {
-  color: #75442e;
-}
-
-.card[data-color="brown"] .category {
-  color: #a47e65;
-}
-
-.card[data-color="purple"] {
-  background: #baa9ba;
-}
-
-.card[data-color="purple"] .description {
-  color: #3a283d;
-}
-
-.card[data-color="purple"] .category {
-  color: #5a283d;
-}
-
-.card[data-color="orange"] {
-  background: #ff8f5e;
-}
-
-.card[data-color="orange"] .description {
-  color: #772510;
-}
-
-.card[data-color="orange"] .category {
-  color: #e95e37;
-}
-
-/*# sourceMappingURL=style.css.map */
 
 
 /* PAGE NOSOTROS */
