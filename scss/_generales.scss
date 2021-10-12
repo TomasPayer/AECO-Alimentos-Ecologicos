@@ -25,12 +25,20 @@ h3 {
   color: #202f41;
 }
 
-.chiken {
-  width: 30%;
-  height: 500px;
-  float: right;
-  top: 50%;
-  padding-right: 2rem;
+.container {
+  position: relative;
+  max-width: 800px; 
+  margin: 0 auto; 
+}
+
+.container .content {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0); 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1; 
+  width: 100%; 
+  padding: 20px; 
 }
 
 article {
@@ -144,15 +152,9 @@ h4 {
   padding-bottom: 5px;
 }
 
-@media screen and (max-width: 490px) {
+@media only screen and (max-width: 600px) {
   .footer {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .footer {
-    width: 100%;
+    width: 600px;
   }
 }
 
