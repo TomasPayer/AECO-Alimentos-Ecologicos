@@ -9,11 +9,16 @@
 
 h3 {
   color: #202f41;
+  text-align: justify;
 }
 
 .navbar {
   color: #202f41;
-  background-color: #202f41;
+}
+
+.offcanvas-title {
+  font-family: 'Angkor';
+  font-size: 22px;
 }
 
 .container-fluid {
@@ -35,18 +40,24 @@ h3 {
 
 .container {
   position: relative;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .container .content {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   background: black;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 93%;
   padding: 10px;
+}
+
+.chiken {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+  border-style: solid;
+  border-color: #202f41;
 }
 
 article {
@@ -79,7 +90,7 @@ html {
 .hero-image {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/farm5.jpg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/farm5.jpg");
-  height: 60%;
+  height: 70%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
