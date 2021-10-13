@@ -105,6 +105,7 @@ html {
   top: 50%;
   left: 31%;
   color: white;
+  font-family: 'Comfortaa', cursive;
 }
 
 /* Footer */
@@ -234,6 +235,7 @@ html {
   top: 50%;
   left: 43%;
   color: white;
+  font-family: 'Comfortaa', cursive;
 }
 
 /* Flip card pollo entero */
@@ -440,6 +442,7 @@ html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
+  font-family: 'Comfortaa', cursive;
 }
 
 h3 {
@@ -530,6 +533,7 @@ html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
+  font-family: 'Comfortaa', cursive;
 }
 
 .footer__servicios {
@@ -592,7 +596,7 @@ html {
   padding-bottom: 5px;
 }
 
-/* PAGE SERVICIOS */
+/* PAGE CONTACTO */
 body,
 html {
   height: 100%;
@@ -616,6 +620,7 @@ html {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   color: white;
+  font-family: 'Comfortaa', cursive;
 }
 
 .footer__contacto {
