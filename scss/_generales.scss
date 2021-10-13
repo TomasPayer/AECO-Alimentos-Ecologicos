@@ -178,9 +178,10 @@ h4 {
 /*PAGE PRODUCTOS */
 body,
 html {
-  height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .hero-image_productos {
@@ -202,100 +203,137 @@ html {
 }
 
 /* Flip card pollo entero */
-.cards {
-  display: grid;
-}
-
-.card {
-  perspective: 40rem;
-}
-
-.card-body {
-  transform-style: preserve-3d;
-  transition-duration: 1s;
-
-  .card:hover & {
-    transform: rotateX(-180deg);
-  }
-}
-
-.card-front,
-.card-back {
-  backface-visibility: hidden;
-}
-
-.card-back {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: rotateX(-180deg);
-  justify-content: center;
-}
-
-.pollo {
-  width: 200px;
-  height: 200px;
-  align-items: center;
-}
-
-.pechuga {
-  width: 200px;
-  height: 200px;
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
-  line-height: 1.3;
-  font-family: sans-serif;
+  background: #F1FAFF;
 }
 
-.cards {
-  grid-gap: 3rem;
-  padding: 1rem;
-  background: whitesmoke;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+.container__card {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
 }
+
+.card__father {
+  margin: 20px;
+  perspective: 1000px;
+}
+
+.card__father:hover .card {
+  transform: rotateY(180deg);
+}
+
 
 .card {
-  display: flex;
-  transition: transform calc(var(--time) / 4);
-  text-decoration: none;
-  color: inherit;
-
-  &:active {
-    transform: scale(0.975);
-  }
+  width: 350px;
+  height: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
 }
 
-.card-body {
-  border-radius: 300px;
-  flex: 1;
+.card__front {
+  background-size: cover;
+  background-position: center;
 }
 
-.card-front,
-.card-back {
-  @extend .shadow;
+
+.card__front,
+.card__back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+
+.card__back {
+  transform: rotateY(180deg);
+  background: white;
+}
+
+.body__card_front {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: white;
-  box-sizing: border-box;
-  padding: 3rem;
-  border-radius: 0.25rem;
+  color: #fff;
+  transform: translateZ(60px);
 }
 
-.card-front {
-  font-size: 60px;
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+  border-radius: 20px;
 }
 
-.shadow {
-  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.04),
-    0 2px 2px rgba(0, 0, 0, 0.04),
-    0 4px 4px rgba(0, 0, 0, 0.04),
-    0 8px 8px rgba(0, 0, 0, 0.04),
-    0 16px 16px rgba(0, 0, 0, 0.04);
+.body__card_back {
+  padding: 40px;
+  text-align: center;
+  transform: translateZ(60px);
 }
+
+.body__card_back p {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.body__card_back input {
+  padding: 10px 40px;
+  margin-top: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: #58B0F6;
+  box-shadow: 1px 1px 30px -5px #58B0F6;
+  border-radius: 10px;
+  transition: box-shadow 600ms;
+}
+
+.body__card_back input:hover {
+  box-shadow: 1px 1px 30px 0px #449de6;
+}
+
+.card__main {
+  text-align: center;
+}
+
+.card__pollo {
+  text-align: center;
+}
+
+.card__image {
+width: 100%;
+height: 100%;
+}
+
+
+
+
+
+
 
 .footer__prodductos {
   width: 100vw;
@@ -620,3 +658,15 @@ html {
   margin-bottom: 20px;
   padding-bottom: 5px;
 }
+
+@media only screen and (max-width: 600px) {
+  .container .content {
+    display: none;
+  }
+}
+
+  @media only screen and (min-width: 600px) {
+    .container .content {
+      display: none;
+    }
+  }
