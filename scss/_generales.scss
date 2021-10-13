@@ -175,42 +175,6 @@ h4 {
 }
 
 
-@media screen and (max-width: 640px) {
-  .footer__section {
-    width: 50%;
-  }
-
-  .content {
-    display: none;
-  }
-
-  .texto {
-    width: 100%;
-  }
-
-  .hero-text {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .footer__section {
-    width: 100%;
-  }
-
-  .content {
-    display: none;
-  }
-
-  .texto {
-    width: 100%;
-  }
-
-  .hero-text {
-    width: 100%;
-  }
-}
-
 /*PAGE PRODUCTOS */
 body,
 html {
