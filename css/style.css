@@ -14,6 +14,8 @@ h3 {
 
 .navbar {
   color: #202f41;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .offcanvas-title {
@@ -133,6 +135,10 @@ h4 {
   padding: 20px 0;
   line-height: 1.9;
   background-color: #202f41;
+  border-style: solid;
+  border-color: #202f41;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .footer .logo {
@@ -192,6 +198,10 @@ html {
   font-family: sans-serif;
 }
 
+.productos {
+  font-family: 'Comfortaa';
+}
+
 .hero-image_productos {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/gallinas.jpeg");
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gallinas.jpeg");
@@ -200,6 +210,8 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  border-style: solid;
+  border-color: #202f41;
 }
 
 .hero-text_productos {
@@ -265,6 +277,7 @@ body {
 .card__front {
   background-size: cover;
   background-position: center;
+  border-radius: 5px;
 }
 
 .card__front,
@@ -518,6 +531,10 @@ h3 {
 body,
 html {
   height: 100%;
+}
+
+.servicios {
+  font-family: 'Comfortaa';
 }
 
 .hero-image-2 {
