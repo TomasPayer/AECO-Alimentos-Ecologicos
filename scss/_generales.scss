@@ -17,12 +17,20 @@ h3 {
 }
 
 .offcanvas-title {
-  font-family: 'Angkor';
-  font-size: 22px;
+  font-family: 'Comfortaa';
+  color: #202f41;
+}
+
+.nav-link {
+  font-family: 'Comfortaa';
+  color: #202f41;
+}
+
+.nav-item {
+  font-family: 'Comfortaa';
 }
 
 .container-fluid {
-  color: #202f41;
   background-color: #202f41;
 }
 
@@ -192,7 +200,7 @@ html {
 }
 
 .productos {
-  font-family: 'Comfortaa'
+  font-family: 'Comfortaa';
 }
 
 .hero-image_productos {
@@ -332,10 +340,20 @@ body {
 
 .card__main {
   text-align: center;
+  margin-top: 100px;
+  font-family: 'Comfortaa';
+  text-decoration: underline;
+  color: #202f41;
 }
 
 .card__pollo {
   text-align: center;
+  font-family: 'Comfortaa';
+}
+
+.card__texto {
+  font-family: 'Comfortaa';
+  color: #202f41;
 }
 
 .card__image {
@@ -435,6 +453,10 @@ html {
 
 h3 {
   color: #98AC33;
+}
+
+.nosotros {
+  font-family: 'Comfortaa';
 }
 
 .footer__nosotros {
@@ -608,6 +630,14 @@ html {
   transform: translate(-50%, -50%);
   color: white;
   font-family: 'Comfortaa', cursive;
+}
+
+.contacto {
+  font-family: 'Comfortaa';
+}
+
+.contacto__2 {
+  font-family: 'Comfortaa';
 }
 
 .footer__contacto {
