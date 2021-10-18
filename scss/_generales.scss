@@ -112,9 +112,10 @@ html {
   text-align: center;
   position: absolute;
   top: 50%;
-  left: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa', cursive;
 }
 
 /* Footer */
@@ -218,7 +219,8 @@ html {
   text-align: center;
   position: absolute;
   top: 50%;
-  left: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   font-family: 'Comfortaa', cursive;
 }
@@ -420,9 +422,6 @@ body {
   margin-bottom: 20px;
   padding-bottom: 5px;
 }
-
-
-
 
 
 /* PAGE NOSOTROS */
