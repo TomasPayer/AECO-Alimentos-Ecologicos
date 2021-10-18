@@ -55,6 +55,7 @@ h3 {
 .index2 {
   text-align: center;
   text-decoration: underline;
+  color: #202f41;
 }
 
 .container {
@@ -476,6 +477,22 @@ html {
   font-family: 'Comfortaa';
 }
 
+.carousel {
+  width: 100%;
+  height: auto;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.carru {
+  font-family: 'Comfortaa';
+}
+
+.carru__1 {
+  font-family: 'Comfortaa';
+}
 
 
 .footer__nosotros {
@@ -491,7 +508,7 @@ html {
   display: block;
   margin: 0 auto;
   width: 1000px;
-  height: 100%;
+  height: auto;
 }
 
 .inner_footer__nosotros .logo_container__nosotros {
