@@ -16,9 +16,19 @@ h3 {
   margin-right: 1px;
 }
 
+
+.navbar-toggler {
+  color: white;
+}
+
 .offcanvas-title {
   font-family: 'Comfortaa';
   color: #202f41;
+}
+
+.offcanvas-body {
+  color: #202f41;
+  background-color: #202f41;
 }
 
 .nav-link {
@@ -28,6 +38,7 @@ h3 {
 
 .nav-item {
   font-family: 'Comfortaa';
+  color: #202f41;
 }
 
 .container-fluid {
@@ -61,11 +72,15 @@ h3 {
 }
 
 .chiken {
-  max-width: 100%;
-  height: auto;
+  max-width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   margin-bottom: 50px;
   border-style: solid;
   border-color: #202f41;
+
 }
 
 .article__index h3 {
@@ -461,6 +476,8 @@ html {
   font-family: 'Comfortaa';
 }
 
+
+
 .footer__nosotros {
   width: 100vw;
   display: block;
@@ -530,6 +547,7 @@ html {
 .servicios {
   font-family: 'Comfortaa'
 }
+
 .hero-image-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/truck2.webp");
   height: 60%;
@@ -656,10 +674,12 @@ html {
   margin-right: 40px;
   background-color: white;
 }
+
 .h1-responsive {
   color: #202f41;
   background-color: white;
 }
+
 .text-center {
   color: #202f41;
   background-color: white;
