@@ -73,8 +73,8 @@ h3 {
 .article__index h3 {
   color: #202f41;
   text-align: justify;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .image {
@@ -485,8 +485,11 @@ html {
   font-family: 'Comfortaa', cursive;
 }
 
-h3 {
-  color: #98AC33;
+.us {
+  color: #202f41;
+  background-color: white;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 
 .nosotros {
@@ -584,6 +587,17 @@ html {
   font-family: 'Comfortaa', cursive;
 }
 
+.service {
+  text-align: justify;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.mb-3 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
 .footer__servicios {
   width: 100vw;
   display: block;
@@ -648,6 +662,7 @@ html {
 body,
 html {
   height: 100%;
+  background-color: white;
 }
 
 .hero-image-contacto {
@@ -678,14 +693,17 @@ html {
 .mb-4 {
   margin-left: 50px;
   margin-right: 40px;
+  background-color: white;
 }
 
 .h1-responsive {
   color: #202f41;
+  background-color: white;
 }
 
 .text-center {
   color: #202f41;
+  background-color: white;
 }
 
 .footer__contacto {
