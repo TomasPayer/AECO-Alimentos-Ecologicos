@@ -58,19 +58,6 @@ h3 {
   color: #202f41;
 }
 
-.container {
-  position: relative;
-}
-
-.container .content {
-  position: absolute;
-  bottom: 50px;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 93%;
-  padding: 10px;
-}
 
 .chiken {
   max-width: 30%;
@@ -139,17 +126,16 @@ h4 {
   color: #98AC33;
 }
 
-.wrapper {
-  background: c;
-  overflow: auto;
-}
-
 .container {
   margin: 0 auto;
   max-width: 700px;
-  width: 50%;
+  width: 100%;
   padding: 0 25px;
   box-sizing: border-box;
+}
+
+.footer__text .container {
+  width: 100%;
 }
 
 .footer {
@@ -176,6 +162,7 @@ h4 {
 .footer__title {
   color: #98AC33;
   padding: 3px 15px;
+  width: 100%;
 }
 
 .footer__hr {
@@ -763,13 +750,23 @@ html {
 }
 
 @media only screen and (max-width: 600px) {
-  .container .content {
+  .content {
     display: none;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .container .content {
+  .content {
     display: none;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
   }
 }
