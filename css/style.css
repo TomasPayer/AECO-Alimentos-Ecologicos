@@ -608,6 +608,7 @@ html {
   text-align: justify;
   margin-right: 40px;
   margin-left: 40px;
+  margin-top: 20px;
 }
 
 .mb-3 {
@@ -800,6 +801,33 @@ html {
   }
   .container {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .index {
+    font-size: 20px;
+  }
+  .index2 {
+    font-size: 40px;
+  }
+  .texto__1 {
+    font-size: 15px;
+  }
+  .index2 {
+    font-size: 15px;
+  }
+  .us {
+    font-size: 15px;
+  }
+  .service {
+    font-size: 15px;
+  }
+  .mb-4 {
+    font-size: 15px;
+  }
+  .card {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
